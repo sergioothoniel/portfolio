@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const HeaderCotainer = styled.header`
-height: 700px;
+height: 633px;
 margin: 0;
 padding: 0;
 overflow: hidden;
@@ -33,7 +33,8 @@ nav{
         justify-self: flex-start;
         width: 20%;
         text-align: center;
-        font-size: x-large;         
+        font-size: x-large; 
+        cursor: pointer;        
     }
 
     .nav-links{

@@ -1,30 +1,54 @@
 import { HeaderCotainer } from "./styles"
 import matrix from "../../assets/backgroundVideo.mp4"
 import "animate.css"
+import { useIdElement } from "../../providers/ElementId"
 
 const Header = () =>{
 
     const entitiesTittle = "<Sérgio O./>"
 
+    const {aboutPosition, projectsPosition} = useIdElement()
+
+    const handleClickNav = (event) =>{
+        event.preventDefault()
+        const hrefElement = event.target.getAttribute("href")
+        
+        if(hrefElement==='#about'){          
+           window.scrollTo(0, aboutPosition)
+        }
+        else if(hrefElement==='#projects'){
+            window.scrollTo(0, projectsPosition)
+        }
+        else if(hrefElement==='#contact'){
+
+        }
+        else{
+            window.scrollTo(0, 0)
+        }    
+    }
+
+    
+    
+
     return(
         <HeaderCotainer>
-            <video autoPlay loop muted width="100%">
+            <video autoPlay loop muted width="100%" height="100%">
                 <source src={matrix} type="video/mp4"/>
             </video>
 
             <nav>
-                <div className="nav-name">{entitiesTittle}</div>
+                <div className="nav-name" onClick={(event)=>{handleClickNav(event)}}>{entitiesTittle}</div>
                 <div className="nav-links">
-                    <a href="#about">Sobre mim</a>
-                    <a href="#projects">Projetos</a>
-                    <a href="#contact">Contato</a>
+                    <a onClick={(event)=>{handleClickNav(event)}} href="#about">Sobre mim</a>
+                    <a onClick={(event)=>{handleClickNav(event)}} href="#projects">Projetos</a>
+                    <a onClick={(event)=>{handleClickNav(event)}} href="#contact">Contato</a>
                 </div>
             </nav>
 
             <div className="header-content">
                 <div className="content-tittle">
                     <h1>Sérgio Othoniel</h1>
-                    <h3 class="animate__animated animate__pulse animate__infinite">Desenvolvedor Front End</h3>  
+                    <h3 className="animate__animated animate__pulse animate__infinite">Desenvolvedor Front End</h3>  
                 </div>
 
                 <div className="content-techs animate__animated animate__zoomIn animate__slower">
