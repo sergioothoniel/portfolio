@@ -7,7 +7,7 @@ const db =[
     {
         name: "newrota",
         github: "https://github.com/sergioothoniel/provi_hack",
-        link: "https://github.com/sergioothoniel/provi_hack"
+        link: "https://provi-hack-ruddy.vercel.app/"
     },
     {
         name: "Relógio Online",

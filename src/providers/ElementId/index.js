@@ -7,10 +7,12 @@ export const IdElementProvider = ({children}) =>{
 
     const [aboutPosition, setAboutPosition] = useState(0)
     const [projectsPosition, setprojectsPosition] = useState(0)
+    const [contactPosition, setContactPosition] = useState(0)
 
         
     return(
-        <IdElementContext.Provider value={{aboutPosition, setAboutPosition, projectsPosition, setprojectsPosition}}>
+        <IdElementContext.Provider value={{aboutPosition, setAboutPosition, projectsPosition, setprojectsPosition,
+            contactPosition, setContactPosition}}>
             {children}
         </IdElementContext.Provider>
     )

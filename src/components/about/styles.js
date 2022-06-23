@@ -37,5 +37,12 @@ figure{
     }
 }
 
+@media (max-width:800px){
+    flex-direction: column;
+    padding: 0 30px;
 
+    figure{
+        width: 200px;
+    }
+}
 `

@@ -1,5 +1,5 @@
 import { HeaderCotainer } from "./styles"
-import matrix from "../../assets/backgroundVideo.mp4"
+import matrix from "../../assets/backgroundVideo2.mp4"
 import "animate.css"
 import { useIdElement } from "../../providers/ElementId"
 
@@ -7,7 +7,7 @@ const Header = () =>{
 
     const entitiesTittle = "<Sérgio O./>"
 
-    const {aboutPosition, projectsPosition} = useIdElement()
+    const {aboutPosition, projectsPosition, contactPosition} = useIdElement()
 
     const handleClickNav = (event) =>{
         event.preventDefault()
@@ -20,7 +20,7 @@ const Header = () =>{
             window.scrollTo(0, projectsPosition)
         }
         else if(hrefElement==='#contact'){
-
+            window.scrollTo(0, contactPosition)
         }
         else{
             window.scrollTo(0, 0)

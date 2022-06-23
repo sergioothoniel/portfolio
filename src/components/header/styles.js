@@ -98,5 +98,43 @@ nav{
     }
 }
 
+@media (max-width: 800px){
 
+    height: 80vh;
+
+    nav{
+
+        justify-content: center;
+
+        .nav-links{
+            display: none;
+        } 
+        
+        .nav-name{
+            width: max-content;
+        }
+
+    }
+
+    .header-content{
+        flex-direction: column;
+
+        .content-techs{
+            width: 90%;
+
+            .techs{
+                width: 40px;
+                margin: 10px;
+            }
+
+            img{
+                max-width: 100%;
+            }
+
+        }
+
+        
+    }
+    
+}
 `
