@@ -32,9 +32,11 @@ const Header = () =>{
 
     return(
         <HeaderCotainer>
-            <video autoPlay loop muted width="100%" height="100%">
-                <source src={matrix} type="video/mp4"/>
-            </video>
+            <div className="videoContainer">
+                <video autoPlay loop muted>
+                    <source src={matrix} type="video/mp4"/>
+                </video>
+            </div>            
 
             <nav>
                 <div className="nav-name" onClick={(event)=>{handleClickNav(event)}}>{entitiesTittle}</div>
