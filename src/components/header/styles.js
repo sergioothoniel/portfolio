@@ -56,6 +56,7 @@ nav{
     width: inherit;
     height: inherit;
     overflow: hidden;
+    background-color: black;
 
     video{
         width: 100%;

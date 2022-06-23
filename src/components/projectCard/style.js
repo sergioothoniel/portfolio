@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProjectCardContainer = styled.div`
 width: 160px;
-height: 200px;
+height: 180px;
 background-color: #3d9673;
 display: flex;
 flex-direction: column;
@@ -19,6 +19,8 @@ h2{
 
 div{
     align-self: flex-start;
+    display: flex;
+    align-items: center;
 }
 
 a{
